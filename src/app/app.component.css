@@ -1,0 +1,78 @@
+
+.wrapper {
+	
+}
+
+.header {
+	height: 100vh;
+	width: 100%;
+	background: url("/assets/img/logo_bg.png") no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.top_banner {
+	background: #f7f8f9;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+}
+.top_banner_left {
+	display: flex;
+	align-items: center;
+}
+.top_banner_right {
+	display: flex;
+	align-items: center;
+}
+
+.top_logo {
+	margin-left: 10px; 
+	margin-top: 7px; 
+}
+
+
+.header_container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+}
+
+.header_bg {
+	width: 100%;
+	height: auto;
+}
+
+.header_content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.company_profile {
+	position: absolute;
+	left: 175px;
+	top: 75px;
+}
+
+.launch-modal {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+.big_title {
+	color: #fff;
+}
