@@ -77,10 +77,13 @@
 	height: 100%;
 }
 
+.company_profile_container{
+	width: 100%;
+}
+
 .company_profile {
-	position: absolute;
-	left: 175px;
-	top: 115px;
+	margin-left: 175px;
+	margin-top: 115px;
 	width: 350px;
 }
 
@@ -92,16 +95,18 @@
 	position: absolute;
 }
 
-.launch_modal {
-	position: absolute;
-	background: white;
+.Launch_modal_containder{
+	width: 100%;
+}
 
+.launch_modal {
+	background: white;
 	border: 2px solid #ff830a;
 	border-radius: 10px;
-	bottom: 95px;
-	margin-left: auto;
-    margin-right: auto;
-    display: block;
+    width: 470px;
+    height: 165px;
+    margin: auto;
+   	margin-top: 170px;
 }
 
 .launch_text{
@@ -121,15 +126,16 @@
 	font-size: 10pt;
 	font-family: 'EncodeSans_Regular';
 	letter-spacing: 1px;
-	margin-top: 20px;
-	margin-bottom: 30px;
 	text-align: center;
 	vertical-align: center;
 	width: 270px;
-	height: 40px;
+	height: 42px;
+	line-height: 42px;
+	margin:auto;
+	margin-top: 20px;
+	border-radius: 10px;
+
 }
-
-
 
 .big_title {
 	color: #fff;
@@ -148,3 +154,117 @@
 	letter-spacing: 1px;	
 	line-height: 1.3em;
 }
+
+.about_container{
+	height: 500px;
+	background: white;
+}
+
+.services_container{
+	height: 525px;
+	width: 100%;
+	background: #032238;
+}
+
+.services{
+	width: 900px;
+	height: 100%;
+	margin: auto;
+}
+
+
+.services_title{
+	color: white;
+	padding-top: 60px;
+	font-family: 'EncodeSans_Bold';
+	font-size: 22.5pt;
+}
+
+.services_description{
+	color: white;
+	padding-top: 35px;
+	font-family: 'EncodeSans_Light';
+	font-size: 17pt;
+	letter-spacing: 1px;	
+	line-height: 1.3em;
+
+}
+
+.service_container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.service{
+	width: 150px;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.service_img{
+	margin: auto;
+}
+
+.service_name{
+	color: white;
+	padding-top: 10px;
+	font-family: 'EncodeSans_Bold';
+	font-size: 10pt;
+	letter-spacing: 1px;	
+	line-height: 1.3em;
+}
+
+.brand_container{
+	height: 136px;
+	background: white;
+}
+
+.brands{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.features_container{
+	width: 100%;
+	height: 265px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.feature_name{
+	color: white;
+	padding-top: 20px;
+	font-family: 'EncodeSans_Bold';
+	font-size: 10pt;
+	letter-spacing: 1px;	
+	line-height: 265px;
+	height: 265px;
+	text-align: center;
+	vertical-align: center;
+	background-color: black;
+	width: 25%;
+}
+
+.map_container{
+	height: 480px;
+}
+
+.footer{
+	height: 430px;
+}
+
+
+
+
+
