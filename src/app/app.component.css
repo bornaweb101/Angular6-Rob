@@ -252,7 +252,7 @@
 	background: #032238;
 }
 
-.services_title{
+.title{
 	color: white;
 	padding-top: 60px;
 	font-family: 'EncodeSans_Bold';
@@ -266,7 +266,6 @@
 	font-size: 17pt;
 	letter-spacing: 1px;	
 	line-height: 1.3em;
-
 }
 
 /*.service_container{
@@ -277,7 +276,7 @@
 }
 */
 .service{
-	width: 150px;
+	max-width: 150px;
 	padding-top: 95px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -285,7 +284,10 @@
 
 .service_img{
 	margin: auto;
+}
 
+.brand_img{
+	margin: auto;
 }
 
 .service_name{
@@ -299,7 +301,11 @@
 
 .brand_container{
 	height: 136px;
+	max-width: 1000px;
 	background: white;
+	display: flex;
+	margin: auto;
+
 }
 
 .brands{
@@ -310,41 +316,32 @@
 	justify-content: space-between;
 }
 
-.brands img {
-}
 
 .features_container{
 	width: 100%;
 	height: 265px;
-
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 }
 
+.features_container{
+	width: 25%%;
+	height:100%;
+}
+
 .feature_name{
+	width: 100%;
+	height:100%;
+	line-height: 265px;
 	color: white;
-	padding-top: 20px;
 	font-family: 'EncodeSans_Bold';
 	font-size: 10pt;
 	letter-spacing: 1px;	
-	line-height: 265px;
-	height: 265px;
 	text-align: center;
-	vertical-align: center;
-	background-color: black;
-	width: 25%;
 }
 
 .map_container{
 	height: 480px;
-	background-color: black;
-}
-
-.contact_container{
-	height: 430px;
-	width: 100%;
-	align-items: center;
 }
 
 .contacts{
@@ -474,19 +471,89 @@
 		line-height: 1.4em;
 	}
 
-	.about_title{
-		font-family: 'EncodeSans_Bold';
-		font-size: 8pt;
-		color: #272727;
-		height: 40px;
-		line-height: 40px;
-		text-align: center;
-		width: 100%;
-	}
-
 	.about_container{
 		height: 250px;
 		background: white;
+	}
+
+	.title{
+		padding-top: 20px;
+		font-family: 'EncodeSans_Bold';
+		font-size: 10pt;
+		text-align: center;
+		width: 100%;
+		color: #272727;
+	}
+
+	.services_description{
+		color: white;
+		padding-top: 20px;
+		font-family: 'EncodeSans_Light';
+		font-size: 10pt;
+		letter-spacing: 1px;	
+		line-height: 1.3em;
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+
+	.service{
+		max-width: 100%;
+		padding: 0px;
+		padding-top: 10px;
+		margin-left: 40px;
+		margin-right: 40px;
+		display: flex;
+	}
+
+	.service_img{
+		margin: auto;
+		margin-top: 10px;
+		width: 40px;
+		height: auto;
+	}
+
+	.brand_img{
+		margin: auto;
+		width: 50px;
+		height: auto;
+	}
+
+
+	.service_name{
+		color: white;
+		font-family: 'EncodeSans_Bold';
+		font-size: 8pt;
+		letter-spacing: 1px;	
+		line-height: 1.3em;
+	}
+
+	.service_desc{
+		color: white;
+		font-family: 'EncodeSans_Light';
+		font-size: 8pt;
+		letter-spacing: 1px;	
+	}
+
+	.services_container{
+		height: 950px;
+	}
+
+	.brand_container{
+		height: 70px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.features_container{
+		height: 90px;
+	}
+
+	.feature_name{
+		font-size: 7pt;
+		letter-spacing: 1px;	
+		text-align: center;
+		vertical-align: center;
+		line-height: 90px;
 	}
 
 
@@ -499,6 +566,30 @@
 		min-width: 320px;
 		margin: auto;
 	}
+
+	.map_container{
+		height: 190px;
+	}
+
+	.contacts{
+		height: 340px;
+		margin: auto;
+		display: block;
+		padding-top: 20px;
+	}
+
+	.introduce_container{
+		width: 100%;
+		display: flex;
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+
+	.contact_logo{
+		width: 60px;
+		height: auto;
+	}
+
 
 	.about_description{
 		display: block;
