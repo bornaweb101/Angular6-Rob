@@ -17,6 +17,17 @@ body {
   src: url(assets/font/Helvetica/HelveticaLTStd-BlkCond.otf) format("opentype");
 }
 
+@font-face {
+  font-family: Helvetical_Bold;
+  src: url(assets/font/Helvetica/HelveticaLTStd-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Helvetical_Light;
+  src: url(assets/font/Helvetica/HelveticaLTStd-Light.otf) format("opentype");
+}
+
+
 
 @font-face {
   font-family: HeadacheNormal;
