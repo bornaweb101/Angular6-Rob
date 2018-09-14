@@ -353,7 +353,7 @@
 }
 
 .introduce_container{
-	width: 450px;
+	max-width: 450px;
 }
 
 .introduce_text{
@@ -572,22 +572,65 @@
 	}
 
 	.contacts{
-		height: 340px;
+		height: 300px;
 		margin: auto;
 		display: block;
 		padding-top: 20px;
 	}
 
 	.introduce_container{
-		width: 100%;
+		max-width: 100%;
 		display: flex;
 		margin-right: 40px;
 		margin-left: 40px;
 	}
 
+	.introduce_text{
+		font-size: 8pt;
+		padding-top: 0pt;
+		margin-left: 10px;
+		margin-right: 16px;
+		max-width: 100%;
+	}
+
 	.contact_logo{
 		width: 60px;
 		height: auto;
+	}
+
+	.address1{
+		padding-top: 20px;
+		font-family: 'EncodeSans_Regular';
+
+		font-size: 8pt;
+		width: 100%;
+		text-align: center;
+		line-height: 1.4em;
+	}
+
+	.address2{
+		padding-top: 20px;
+		font-family: 'EncodeSans_Regular';
+		font-size: 8pt;
+		letter-spacing: 1px;	
+		line-height: 1.4em; 
+		width: 100%;
+		text-align: center;
+	}
+
+	.yellow_text{
+		font-family: 'EncodeSans_Regular';
+	}
+
+	.bold_text{
+		font-family: 'EncodeSans_Medium';
+	}
+
+	.copyright{
+		font-family: 'EncodeSans_Light';
+		font-size: 7pt;
+		padding-top: 50px;
+		margin-left: 40px;
 	}
 
 
