@@ -33,6 +33,43 @@ export class AppComponent {
 
   isHidden = false;
 
+  abouts = [{
+    year:'1966',
+    aboutdetail:'',
+    img:'',
+    isShow:false
+  },
+  {
+    year:'1979',
+    aboutdetail:'',
+    img:'',
+    isShow:false
+  },
+  {
+    year:'1990',
+    aboutdetail:'',
+    img:'',
+    isShow:false
+  },
+  {
+    year:'1994',
+    aboutdetail:'',
+    img:'',
+    isShow:false
+  },
+  {
+    year:'2003',
+    aboutdetail:'',
+    img:'',
+    isShow:false
+  },
+  {
+    year:'2013',
+    aboutdetail:'',
+    img:'',
+    isShow:false
+  }];
+
   ngOnInit() {
 
   }
@@ -94,9 +131,21 @@ export class AppComponent {
     });
   }
 
+
+
   toggleMap() {
     this.isHidden = !this.isHidden;
 
     this.gmapElement.nativeElement.hidden = this.isHidden;
   }
+
+  showMenuFunction(){
+    console.log("menu clicked");;
+  }
+
+  circleclick(i){
+    console.log("clicked"+i);
+    this.abouts[i].isShow = !this.abouts[i].isShow;
+  }
+
 }
