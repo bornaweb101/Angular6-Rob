@@ -31,41 +31,41 @@ export class AppComponent {
 
   selectedMarkerType: string = "parking_lot_maps.png";
 
-  isHidden = false;
+  isMenuHidden = true;
 
   abouts = [{
     year:'1966',
-    aboutdetail:'',
+    aboutdetail:'As a new immigrant to Canada, Ben Kochman acquired two delivery trucks, an office, a few loading doors, and founded Kochman Transport',
     img:'',
     isShow:false
   },
   {
     year:'1979',
-    aboutdetail:'',
+    aboutdetail:'As a new immigrant to Canada, Ben Kochman acquired two delivery trucks, an office, a few loading doors, and founded Kochman Transport',
     img:'',
     isShow:false
   },
   {
     year:'1990',
-    aboutdetail:'',
+    aboutdetail:'As a new immigrant to Canada, Ben Kochman acquired two delivery trucks, an office, a few loading doors, and founded Kochman Transport',
     img:'',
     isShow:false
   },
   {
     year:'1994',
-    aboutdetail:'',
+    aboutdetail:'As a new immigrant to Canada, Ben Kochman acquired two delivery trucks, an office, a few loading doors, and founded Kochman Transport',
     img:'',
     isShow:false
   },
   {
     year:'2003',
-    aboutdetail:'',
+    aboutdetail:'As a new immigrant to Canada, Ben Kochman acquired two delivery trucks, an office, a few loading doors, and founded Kochman Transport',
     img:'',
     isShow:false
   },
   {
     year:'2013',
-    aboutdetail:'',
+    aboutdetail:'As a new immigrant to Canada, Ben Kochman acquired two delivery trucks, an office, a few loading doors, and founded Kochman Transport',
     img:'',
     isShow:false
   }];
@@ -134,13 +134,6 @@ export class AppComponent {
 
 
   toggleMap() {
-    this.isHidden = !this.isHidden;
-
-    this.gmapElement.nativeElement.hidden = this.isHidden;
-  }
-
-  showMenuFunction(){
-    console.log("menu clicked");;
   }
 
   circleclick(i){
@@ -148,4 +141,13 @@ export class AppComponent {
     this.abouts[i].isShow = !this.abouts[i].isShow;
   }
 
+  showMenuFunction(){
+    console.log("show menu clicked");
+    this.isMenuHidden = false;
+  }
+
+  hideMenu(){
+    console.log("hide menu clicked");
+    this.isMenuHidden = true;
+  }
 }

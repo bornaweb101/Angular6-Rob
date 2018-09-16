@@ -1,3 +1,16 @@
+<div class = "menu_container" [hidden] = "isMenuHidden" (click)="hideMenu()">
+  <div class="menu_content">
+    <div class = "menu_text">ABOUT</div>
+    <div class = "menu_text">SERVICES</div>
+    <div class = "menu_text">CERTIFICATIONS</div>
+    <div class = "menu_text">TECHNOLOGY</div>
+    <div class = "menu_text">DISPATCH</div>
+    <div class = "menu_text">DRIVERS</div>
+    <div class = "menu_text">TRACK&TRACE</div>
+    <div class = "menu_text">CONTACT</div>
+  </div>
+</div>
+
 <div class="wrapper">
 	<div class="header">
 
@@ -16,14 +29,14 @@
           <div class="top_language">FR</div>
         </div>
 
-        <div class = "mobileshow" >
+        <div class = " mobileshow" >
           <img class = "mobilemenuicon" (click)="showMenuFunction()" src="assets/img/yellow_harmburger.png" />
         </div>
 
   		</div>
 
 
-      <div class = "memu_container mobilehide">
+      <div class = "memuicon_container mobilehide">
         <img class = "menuicon" (click)="showMenuFunction()" src="assets/img/hamburger.png" />
       </div>
 
@@ -52,11 +65,13 @@
   <div class="container about_container">
     <div class="about_diagram">
 
-        <ul class = "about_line">
+        <ul class = "about_line" style = "padding:0;">
           <li  *ngFor="let about of abouts; let i = index;"> 
-            <div style="z-index: 9; margin-left: 100px;" (click)="circleclick(i)">
-              <div class = "circle" id = "about_circle1" ></div>
-              <div class = "pluslabel">+</div>
+            <div  class = "circle_container" [style.margin-left.%]= "i*400" (click)="circleclick(i)">
+              <div class = "circle" id = "about_circle1" [hidden] = "about.isShow" ></div>
+              <div class = "small_circle" id = "about_circle1" [hidden] = "!about.isShow" ></div>
+
+              <div class = "pluslabel" [hidden] = "about.isShow">+</div>
               <div class = "yearLabel">{{about.year}}</div>
               <div class = "about_detail" id = "about_detail1" ng-show="about_detail1" [hidden] = "!about.isShow">
                 <div class = "detail_title">{{about.year}}</div>
@@ -187,4 +202,5 @@ a trained security guard patrols off hours and weekends.<br/> <br/> KT Group can
     <div class = "copyright mobileshow">@2018 KT Group. All rights reserved</div>
   </div>
   
+
 </div>
