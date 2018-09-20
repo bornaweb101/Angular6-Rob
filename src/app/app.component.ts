@@ -150,4 +150,16 @@ export class AppComponent {
     console.log("hide menu clicked");
     this.isMenuHidden = true;
   }
+
+  facebookClick(){
+    window.open("https://www.facebook.com", "_blank");
+  }
+
+  twitterClick(){
+    window.open("https://www.twitter.com", "_blank");
+  }
+
+  linkedinClick(){
+    window.open("https://www.linkedin.com", "_blank");
+  }
 }
