@@ -162,4 +162,37 @@ export class AppComponent {
   linkedinClick(){
     window.open("https://www.linkedin.com", "_blank");
   }
+
+  aboutClick(){
+    this.isMenuHidden = true;
+    this.scroll.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  servicesClick(){
+    
+  }
+
+  certClick(){
+    
+  }
+
+  techClick(){
+    
+  }
+
+  disClick(){
+    
+  }
+
+  driveClick(){
+    
+  }
+
+  trackClick(){
+     
+  }
+
+  contactClick(){
+
+  }
 }

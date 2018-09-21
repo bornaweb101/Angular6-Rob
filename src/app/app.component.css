@@ -23,10 +23,7 @@
 	text-align: center;
 }
 
-.menu_text :hover{
-	color: #ff830a;
-}
-.menu_text :focus{
+.menu_text:hover{
 	color: #ff830a;
 }
 

@@ -1,13 +1,13 @@
-<div class = "menu_container" [hidden] = "isMenuHidden" (click)="hideMenu()">
+<div class = "menu_container" [hidden] = "isMenuHidden" >
   <div class="menu_content">
-    <div class = "menu_text">ABOUT</div>
-    <div class = "menu_text">SERVICES</div>
-    <div class = "menu_text">CERTIFICATIONS</div>
-    <div class = "menu_text">TECHNOLOGY</div>
-    <div class = "menu_text">DISPATCH</div>
-    <div class = "menu_text">DRIVERS</div>
-    <div class = "menu_text">TRACK&TRACE</div>
-    <div class = "menu_text">CONTACT</div>
+    <div class = "menu_text" (click)="aboutClick()">ABOUT</div>
+    <div class = "menu_text" (click)="servicesClick()">SERVICES</div>
+    <div class = "menu_text" (click)="certClick()">CERTIFICATIONS</div>
+    <div class = "menu_text" (click)="techClick()">TECHNOLOGY</div>
+    <div class = "menu_text" (click)="disClick()">DISPATCH</div>
+    <div class = "menu_text" (click)="driveClick()">DRIVERS</div>
+    <div class = "menu_text" (click)="trackClick()">TRACK&TRACE</div>
+    <div class = "menu_text" (click)="contactClick()">CONTACT</div>
   </div>
 </div>
 
